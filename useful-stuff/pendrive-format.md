@@ -1,0 +1,5 @@
+# Formatting a pendrive 
+
+```
+lsblk
+```
