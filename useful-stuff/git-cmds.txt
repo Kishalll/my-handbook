@@ -1,0 +1,45 @@
+1. View Commit History
+Shows the full commit history of the repository including commit hashes, author, date, and message.
+
+Code:
+git log
+git log --oneline
+git log --oneline --graph --decorate --all
+git log <file> or path
+
+2. Restore an Entire Folder from a Previous Commit
+Replaces the current version of a folder with the version stored in a specific commit.
+
+Code:
+git restore --source=<commit_hash> -- <folder>
+
+3. Reset Repository to a Specific Commit
+Moves the repository back to a previous commit. There are three reset levels.
+
+Code:
+git reset --soft <commit_hash> - no new changes or file affected
+git reset --mixed <commit_hash>
+git reset --hard <commit_hash> - all changes overwritttern 
+
+4. Rename a Branch
+Changes the name of a branch locally or remotely.
+
+Code:
+Rename current branch:
+git branch -m new_name
+
+Rename another branch:
+git branch -m old_name new_name
+
+5. Switch to Another Branch
+Moves your working directory to another branch.
+
+Code:
+git switch <branch_name>
+
+9. Replace Current Branch with Another Branch
+What it does:
+Makes the current branch identical to another branch.
+
+Code:
+git reset --hard <branch_name>
